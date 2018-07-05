@@ -1,3 +1,4 @@
+/*
 package com.qhb.service.impl;
 
 import com.alibaba.dubbo.config.annotation.Service;
@@ -9,9 +10,11 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import java.util.ArrayList;
 import java.util.Collection;
 
+*/
 /**
  * Created by qianying on 2018/6/10.
- */
+ *//*
+
 @Service(version = "1.0.0")
 public class UserDetailServiceImpl implements UserDetailService {
 
@@ -38,3 +41,4 @@ public class UserDetailServiceImpl implements UserDetailService {
         return securityUser;
     }
 }
+*/
