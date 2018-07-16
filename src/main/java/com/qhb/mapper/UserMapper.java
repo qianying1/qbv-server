@@ -1,6 +1,7 @@
 package com.qhb.mapper;
 
 import com.qhb.model.User;
+import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Mapper;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
@@ -10,9 +11,8 @@ import java.util.List;
 @Mapper
 @Repository("userMapper")
 public interface UserMapper {
-//    int deleteByPrimaryKey(Integer userId);
+    int deleteByPrimaryKey(Integer userId);
 
-    @Transactional
     int insert(User record);
 
     @Transactional
@@ -23,7 +23,7 @@ public interface UserMapper {
     @Transactional
     User selectByPrimaryKey(Integer userId);
 
-//    int updateByPrimaryKeySelective(User record);
+    int updateByPrimaryKeySelective(User record);
 
-//    int updateByPrimaryKey(User record);
+    int updateByPrimaryKey(User record);
 }

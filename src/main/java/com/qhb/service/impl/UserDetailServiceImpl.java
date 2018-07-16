@@ -3,9 +3,11 @@ package com.qhb.service.impl;
 
 import com.alibaba.dubbo.config.annotation.Service;
 import com.qhb.service.UserDetailService;
+/*
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
+
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -18,7 +20,7 @@ import java.util.Collection;
 @Service(version = "1.0.0")
 public class UserDetailServiceImpl implements UserDetailService {
 
-    public void test(){
+    /*public void test(){
 
     }
 

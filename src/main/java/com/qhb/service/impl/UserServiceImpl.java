@@ -1,7 +1,7 @@
 package com.qhb.service.impl;
 
 import com.alibaba.dubbo.config.annotation.Service;
-import com.github.pagehelper.PageHelper;
+//import com.github.pagehelper.PageHelper;
 import com.qhb.mapper.UserMapper;
 import com.qhb.model.User;
 import com.qhb.service.UserService;

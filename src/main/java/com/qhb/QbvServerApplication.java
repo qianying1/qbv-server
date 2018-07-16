@@ -1,8 +1,10 @@
 package com.qhb;
 
+import com.qhb.core.util.ApplicationContextUtil;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.SpringBootConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ApplicationContext;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -23,7 +25,8 @@ public class QbvServerApplication {
         SpringApplication app = new SpringApplication(QhbNmApplication.class);
         app.setDefaultProperties(properties);
         app.run(args);*/
-		SpringApplication.run(QbvServerApplication.class, args);
+		ApplicationContext app=SpringApplication.run(QbvServerApplication.class, args);
+		ApplicationContextUtil.setApplicationContext(app);
 	}
 
     /*private void test(){
